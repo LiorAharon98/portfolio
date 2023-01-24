@@ -21,6 +21,10 @@
   background: linear-gradient(to bottom, rgba(8, 0, 255, 0.513), rgb(0, 153, 255));
 }
 .about_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 170px;
   height: 45px;
   border-radius: 20px;
@@ -52,4 +56,11 @@
   font-size: 25px;
   margin: 0px;
   padding: 0px;
+}
+
+
+@media screen and (max-width:768px) {
+  .about_container{
+    width: 110%;
+  }
 }

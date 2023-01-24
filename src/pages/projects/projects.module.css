@@ -34,9 +34,10 @@
   margin: 0px;
 }
 .img {
+  background-color: white;
   border-radius: 15px;
-  width: 40%;
-  height: 40%;
+  width: 20%;
+  height: 30%;
 }
 .info {
   margin: 0px;
@@ -47,4 +48,17 @@
   color: white;
   font-size: 22px;
   margin: 10px;
+}
+
+@media screen and (max-width:768px) {
+  .img{
+    width: 85%;
+    height: 40%;
+  }
+  .arrow_container{
+    height: 110%;
+  }
+  .info{
+    text-align: center;
+  }
 }

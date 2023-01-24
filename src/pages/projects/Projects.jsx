@@ -34,7 +34,6 @@ const Projects = () => {
     <div className={styles.page_container}>
       <div className={styles.arrow_container}>
         <AiOutlineArrowLeft className={styles.arrow} onClick={toggleProjects} />
-        <div></div>
 
         <AiOutlineArrowRight className={styles.arrow} onClick={toggleProjects.bind(this, "plus")} />
       </div>

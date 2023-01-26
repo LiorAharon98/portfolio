@@ -1,64 +1,76 @@
-.page_container {
-  display: flex;
-}
 .container {
+  background: linear-gradient(to bottom, rgb(1, 58, 245), rgb(77, 128, 249));
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 900px;
-  background: linear-gradient(to bottom, rgb(1, 58, 245), rgb(77, 128, 249));
 }
 .arrow_container {
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 90%;
-  width: 100%;
+  width: 90%;
 }
 
+.arrow {
+  padding: 10px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 25px;
+}
+.info_container {
+  display: flex;
+  color: rgb(0, 140, 255);
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  width: 35%;
+}
+.using_test {
+  display: flex;
+  flex-wrap: wrap;
+}
 .arrow:hover {
   transition: 500ms;
   background-color: rgb(0, 0, 0);
   color: white;
-}
-.arrow {
-  padding: 10px;
-  font-size: 25px;
-  background-color: white;
-  border-radius: 25px;
 }
 .project_name {
   margin: 0px;
 }
 .img {
   background-color: white;
-  border-radius: 15px;
-  width: 20%;
+  border-radius: 10px;
+  width: 35%;
   height: 30%;
 }
 .info {
-  margin: 0px;
 }
 .link {
-  position: fixed;
-  bottom: 20px;
   color: white;
   font-size: 22px;
-  margin: 10px;
+  background-color: black;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px;
 }
 
-@media screen and (max-width:768px) {
-  .img{
-    width: 85%;
-    height: 40%;
+@media screen and (max-width: 768px) {
+  .img {
+    width: 90%;
+    height: 30%;
   }
-  .arrow_container{
-    height: 110%;
+  .arrow_container {
+    margin: 15px;
+    justify-content: space-between;
+    width: 95%;
   }
-  .info{
-    text-align: center;
+  .info {
+  }
+  .info_container {
+    padding-left: 10px;
+    width: 95%;
   }
 }

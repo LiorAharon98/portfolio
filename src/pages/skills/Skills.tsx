@@ -15,6 +15,7 @@ const Skills = () => {
     { icon: "/icons/heroku.png", label: "Heroku" },
     { icon: "/icons/netlify.jpg", label: "netlify" },
     { icon: "/icons/github.png", label: "GitHub" },
+    { icon: "/icons/ejs.png", label: "Ejs" },
   ];
   return (
     <div className={styles.container}>

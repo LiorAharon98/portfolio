@@ -7,24 +7,24 @@ const Projects = () => {
   const projects = [
     {
       label: "Bank",
-      info: "An End to end progressive web application for online shopping served with a full functional backend including authentication and Database manipulation",
+      info: "An End to end progressive web application for bank service served with a full functional backend including authentication and Database manipulation",
       link: "https://lioraharon98.github.io/bank/",
-      img: "/bank.jpg",
-      using: ["react", "Html5", "Css3", "NodeJs", "ExpressJs", "MongoDb", "Firebase"],
+      img: "/projects-icons/bank.jpg",
+      using: ["React", "Html5", "Css3", "NodeJs", "ExpressJs", "MongoDb", "Firebase"],
     },
     {
       label: "super market",
       info: "An End to end progressive web application for online shopping served with a full functional backend including authentication and Database manipulation",
       link: "https://lioraharon98.github.io/supermarket/",
-      img: "/supermarket.webp",
-      using: ["react", "Html5", "Css3", "NodeJs", "ExpressJs", "MongoDb", "Firebase", "ejs"],
+      img: "/projects-icons/supermarket.webp",
+      using: ["React", 'Javascript',"Html5", "Css3", "NodeJs", "ExpressJs", "MongoDb", "Firebase", "Ejs"],
     },
     {
       label: "decibel meter",
-      info: "an decibel meter that can detect a exception in db by the day",
+      info: "an decibel meter display decibel and frequency with anomaly detection after data send to database ",
       link: "https://next-js-decibel-meter.herokuapp.com/",
-      img: "/decibel-meter.png",
-      using: ["react", "Html5", "Css3", "NodeJs", "ExpressJs", "MongoDb", "Firebase"],
+      img: "/projects-icons/decibel-meter.png",
+      using: ["NextJs", "Html5", "Css3", "NodeJs", "ExpressJs", "MongoDb"],
     },
   ];
   const toggleProjects = (value) => {
@@ -39,21 +39,28 @@ const Projects = () => {
       <div className={styles.arrow_container}>
         <AiOutlineArrowLeft className={styles.arrow} onClick={toggleProjects} />
         <a className={styles.link} href={projects[index].link}>
-      link to website
-      </a>
+          link to website >>
+        </a>
         <AiOutlineArrowRight className={styles.arrow} onClick={toggleProjects.bind(this, "plus")} />
       </div>
       <div className={styles.info_container}>
-        <h2>project name : {projects[index].label}</h2>
-        <h2 className={styles.info}> project info : {projects[index].info}</h2>
-        <div className={styles.using_test}>
-          <h2 className={styles.info}>using : </h2>
-          {projects[index].using.map((using, index) => (
-            <h2 key={index}>{using},</h2>
-          ))}
+        <div className={styles.project_keys}>
+          <p className={styles.keys_tag}>project name :</p>
+          <p className={styles.keys_tag}>project info :</p>
+          <p className={styles.keys_tag}>using : </p>
+        </div>
+        <div className={styles.project_info}>
+          <p className={styles.info_tag}>{projects[index].label}</p>
+          <p className={styles.info_tag}>{projects[index].info}</p>
+          <div className={styles.using}>
+            {projects[index].using.map((using, index) => (
+              <p className={styles.info_tag} key={index}>
+                {using},
+              </p>
+            ))}
+          </div>
         </div>
       </div>
-    
     </div>
   );
 };

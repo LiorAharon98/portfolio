@@ -9,7 +9,7 @@
 .about_container {
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 500px;
   flex-direction: column;
   border-radius: 10px;
   width: 50%;
@@ -58,9 +58,24 @@
   padding: 0px;
 }
 
+.resume {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.resume_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(68, 0, 205);
+  width: 170px;
+  border-radius: 20px;
+  height: 45px;
+}
 
-@media screen and (max-width:768px) {
-  .about_container{
+@media screen and (max-width: 768px) {
+  .about_container {
     width: 110%;
   }
 }

@@ -22,9 +22,8 @@
 }
 .info_container {
   display: flex;
-  color: rgb(0, 140, 255);
+  color: black;
 
-  background-color: white;
   border-radius: 10px;
   width: 35%;
   height: 350px;

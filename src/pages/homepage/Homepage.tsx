@@ -2,7 +2,6 @@ import styles from "./homepage.module.css";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
-import { AiOutlineFilePdf } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
@@ -27,11 +26,7 @@ const Homepage = () => {
             </a>
           </div>
           <div className={styles.resume_container}>
-            {/* <AiOutlineFilePdf fontSize={'20px'}/> */}
-            <a className={styles.resume} href="/Resume Lior Aharon.pdf">
-              {" "}
-              my resume
-            </a>
+       
           </div>
         </div>
 

@@ -1,24 +1,29 @@
 import styles from "./header.module.css";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import HeaderLink from "../header_link/HeaderLink";
 
 const Header = () => {
+  const [toggle, setToggle] = useState<string | null>("");
+  const onToggle = (e: React.MouseEvent<HTMLElement>) => {
+    setToggle(e.currentTarget.textContent);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.home_container}>
-        <Link className={styles.header_tag} to={"/"}>
+        <HeaderLink onClick={onToggle} toggle={toggle} to="/">
           home
-        </Link>
+        </HeaderLink>
       </div>
 
-      <Link className={styles.header_tag} to={"/skills"}>
+      <HeaderLink onClick={onToggle} toggle={toggle} to="/skills">
         skills
-      </Link>
-      <Link className={styles.header_tag} to={"/projects"}>
+      </HeaderLink>
+      <HeaderLink onClick={onToggle} toggle={toggle} to="/projects">
         projects
-      </Link>
-      <Link className={styles.header_tag} to={"/experience"}>
+      </HeaderLink>
+      <HeaderLink onClick={onToggle} toggle={toggle} to="/experience">
         experience
-      </Link>
+      </HeaderLink>
     </div>
   );
 };

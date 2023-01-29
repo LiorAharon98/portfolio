@@ -39,7 +39,7 @@ const Projects = () => {
       <div className={styles.arrow_container}>
         <AiOutlineArrowLeft className={styles.arrow} onClick={toggleProjects} />
         <a className={styles.link} href={projects[index].link}>
-          link to website >>
+          link to website {'>>'}
         </a>
         <AiOutlineArrowRight className={styles.arrow} onClick={toggleProjects.bind(this, "plus")} />
       </div>

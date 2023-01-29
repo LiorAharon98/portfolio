@@ -58,21 +58,7 @@
   padding: 0px;
 }
 
-.resume {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  border-radius: 20px;
-}
-.resume_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(68, 0, 205);
-  width: 170px;
-  border-radius: 20px;
-  height: 45px;
-}
+
 
 @media screen and (max-width: 768px) {
   .about_container {

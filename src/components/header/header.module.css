@@ -8,13 +8,12 @@
   text-align: start;
   width: 80%;
 }
-.header_tag {
-  color: black;
-  font-weight: bolder;
-  font-size: 18px;
-  padding: 15px;
-  border-radius: 5px;
-  text-decoration: none;
+
+.header_tag:hover{
+  text-decoration: underline;
+  color: rgb(0, 72, 255);
+  font-size: larger;
+  transition: 400ms;
 }
 
 @media screen and (max-width:768px) {

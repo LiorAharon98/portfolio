@@ -1,0 +1,32 @@
+.page_container {
+  background: linear-gradient(to bottom, rgb(90, 0, 174), rgb(72, 3, 246));
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding-left: 10px;
+  background-color: white;
+  border-radius: 15px;
+  width: 700px;
+}
+.info_container {
+  display: flex;
+  align-items: center;
+}
+.tag {
+  margin-left: 15px;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+
+}
+@media screen and (max-width:768px) {
+    
+    .page_container{
+        height: 800px;
+    }
+}

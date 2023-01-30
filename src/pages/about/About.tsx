@@ -13,7 +13,7 @@ const About = () => {
 
         <div className={styles.tag}>
           <p>  language : Javascript,Typescript </p>
-          <p> Frameworks & Technologies React React Native Next js Firebase Express NodeJS
+          <p> Frameworks & Technologies : React React Native Next js Firebase Express NodeJS
           HTML CSS Ejs</p>
           <p>    Databases : MongoDB, Firebase</p>
     

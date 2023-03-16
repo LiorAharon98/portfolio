@@ -6,6 +6,7 @@ const Experience = () => {
       label: "abilisense",
       years: "2022 - 2023",
       info: "Full stack application contain decibel meter and anomaly detection using next js",
+      using: "Next Js, React Native, Html , Css ,Node Js, Express Js, Mongo Db",
     },
   ];
   return (
@@ -14,7 +15,9 @@ const Experience = () => {
         {experience.map((experience, index) => {
           return (
             <div key={index}>
-              <img className={styles.img} src={experience.img} alt="error" />
+              <div className={styles.img_container}>
+                <img className={styles.img} src={experience.img} alt="error" />
+              </div>
 
               <div className={styles.info_container}>
                 <h2>company :</h2>
@@ -25,13 +28,19 @@ const Experience = () => {
                 <p className={styles.tag}> {experience.years}</p>
               </div>
               <div className={styles.info_container}>
-                <h2>info :</h2>
+                <h2>info:</h2>
                 <p className={styles.tag}>{experience.info}</p>
+              </div>
+              <div className={styles.info_container}>
+                <h2>using:</h2>
+                <p className={styles.tag}>{experience.using}</p>
               </div>
             </div>
           );
         })}
       </div>
+      <div></div>
+      <div></div>
     </div>
   );
 };

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 .about_container {
   display: flex;
@@ -63,5 +63,12 @@
 @media screen and (max-width: 768px) {
   .about_container {
     width: 110%;
+    height: 500px;
+  }
+  .container{
+    height: 800px;
+  }
+  .about{
+    height: 800px;
   }
 }

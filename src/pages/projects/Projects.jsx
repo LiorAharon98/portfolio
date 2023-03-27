@@ -35,7 +35,6 @@ const Projects = () => {
                 </p>
               ))}
             </div>
-         
           </div>
         </div>
       </div>
@@ -48,11 +47,10 @@ const Projects = () => {
             return <BsCircle key={currentIndex} fontSize={18} color={currentIndex === index ? "white" : undefined} />;
           })}
           <AiOutlineArrowRight className={styles.arrow} onClick={toggleProjects.bind(this, "plus")} />
-          
         </div>
         <a className={styles.link} href={projects[index].link}>
-              Link
-            </a>
+          Link
+        </a>
       </div>
     </div>
   );

@@ -14,6 +14,9 @@ const Projects = () => {
 
     setIndex((prev) => (prev === 0 ? (prev = 0) : prev - 1));
   };
+  function test(){
+    
+  }
   return (
     <div key={index} className={styles.container}>
       <div className={styles.container_left_side}>

@@ -22,6 +22,10 @@
   background-color: white;
   border-radius: 10px;
 }
+.skill_container:hover{
+  border: 1px solid white;
+  transition: 500ms;
+}
 .test {
   display: flex;
   justify-content: center;

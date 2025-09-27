@@ -7,8 +7,8 @@ const Homepage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.about_container}>
-        <h1 style={{margin : 0}}>HI There , I'm Lior Aharon</h1>
-        <p className={styles.text}>i am a full stack developer</p>
+        <h1 style={{margin : 0}}>HI There, I'm Lior Aharon</h1>
+        <p className={styles.text}>I'm a full stack developer</p>
         <Link to={"/about"} className={styles.about_button}>
           {" "}
           About me

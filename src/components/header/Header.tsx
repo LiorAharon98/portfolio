@@ -11,18 +11,18 @@ const Header = () => {
     <div className={styles.container}>
       <div className={styles.home_container}>
         <HeaderLink onClick={onToggle} toggle={toggle} to="/">
-          home
+          Home
         </HeaderLink>
       </div>
 
       <HeaderLink onClick={onToggle} toggle={toggle} to="/skills">
-        skills
+        Skills
       </HeaderLink>
       <HeaderLink onClick={onToggle} toggle={toggle} to="/projects">
-        projects
+        Projects
       </HeaderLink>
       <HeaderLink onClick={onToggle} toggle={toggle} to="/experience">
-        experience
+        Experience
       </HeaderLink>
     </div>
   );

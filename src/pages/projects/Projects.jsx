@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./projects.module.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineArrowLeft } from "react-icons/ai";
@@ -14,23 +14,21 @@ const Projects = () => {
 
     setIndex((prev) => (prev === 0 ? (prev = 0) : prev - 1));
   };
-  function test(){
-    
-  }
+
   return (
     <div key={index} className={styles.container}>
       <div className={styles.container_left_side}>
         <div className={styles.info_container}>
           <div className={styles.test}>
-            <p className={styles.keys_tag}>project name :</p>
+            <p className={styles.keys_tag}>Project name :</p>
             <p className={styles.info_tag}>{projects[index].label}</p>
           </div>
           <div className={styles.info_text_container}>
-            <p className={styles.keys_tag}>project info :</p>
+            <p className={styles.keys_tag}>Project info :</p>
             <p className={styles.info_tag}>{projects[index].info}</p>
           </div>
           <div className={styles.info_text_container}>
-            <p className={styles.keys_tag}>using : </p>
+            <p className={styles.keys_tag}>Technologies : </p>
             <div className={styles.using}>
               {projects[index].using.map((using, index) => (
                 <p className={styles.info_tag} key={index}>

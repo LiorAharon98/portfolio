@@ -34,7 +34,7 @@
 .skills_container {
   flex-wrap: wrap;
   display: flex;
-  width: 50%;
+  width: 70%;
   justify-content: center;
 }
 

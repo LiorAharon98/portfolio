@@ -2,14 +2,14 @@ import styles from "./experience.module.css";
 const Experience = () => {
   const experience = [
     {
-      img: "/tripteam.jpg",
+      img: "/experience-images/tripteam.jpg",
       label: "Tripteam",
       years: "2024 - 2025",
       info: "Full stack app contain a social network for traveling using react native",
       technologies: "React Native,React ,Aws , Typescript ,Html ,Css ,Node Js ,Express Js ,Mongo Db",
     },
     {
-      img: "/abilisense.png",
+      img: "/experience-images/abilisense.png",
       label: "Abilisense",
       years: "2022 - 2023",
       info: "Full stack application contain decibel meter and anomaly detection using next js",

@@ -1,5 +1,6 @@
 .page_container {
-  background: linear-gradient(to bottom, rgb(90, 0, 174), rgb(72, 3, 246));
+  background: linear-gradient(to bottom, rgba(8, 0, 255, 0.513), rgb(0, 153, 255));
+
   height: 900px;
   display: flex;
   align-items: center;
@@ -8,7 +9,6 @@
 }
 .container {
   padding-left: 10px;
-  background-color: white;
   border-radius: 15px;
   width: 700px;
 }
@@ -26,6 +26,7 @@
 .img {
   width: 150px;
   height: 150px;
+  border-radius: 10px;
 }
 .img_container {
  
@@ -34,9 +35,7 @@
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .page_container {
-    height: 800px;
-  }
+ 
   .container {
     width: 90%;
   }

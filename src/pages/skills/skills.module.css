@@ -1,5 +1,7 @@
 .container {
-  background: linear-gradient(to bottom, rgb(90, 0, 174), rgb(72, 3, 246));
+  background: linear-gradient(to bottom, rgba(8, 0, 255, 0.513), rgb(0, 153, 255));
+
+
 }
 #header {
   text-align: center;
@@ -17,8 +19,8 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
   background-color: white;
   border-radius: 10px;
 }
@@ -44,7 +46,8 @@
   }
   .skill_container{
     margin: 5px;
-    width: 170px;
+    width: 95px;
+    height: 95px;
   }
   
 }

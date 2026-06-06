@@ -1,18 +1,21 @@
 .container {
-  background: linear-gradient(to bottom, rgb(90, 0, 174), rgb(72, 3, 246));
-
+  background: linear-gradient(to bottom, rgba(8, 0, 255, 0.513), rgb(0, 153, 255));
+  height: 500px;
+}
+.container2 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 550px;
+}
+.projects_label_container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
 }
 .info_text_container {
-  height: 160px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 10px;
 }
 .container_left_side {
   display: flex;
@@ -38,11 +41,6 @@
   margin-top: 20px;
 }
 
-.arrow {
-  padding: 5px;
-  font-size: 30px;
-  border-radius: 25px;
-}
 .info_container {
   color: black;
   display: flex;
@@ -58,27 +56,17 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.arrow:hover {
-  transition: 500ms;
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
 
 .img {
   background-color: white;
-  border-radius: 10px;
-  width: 450px;
-  height: 300px;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
 }
 .link {
-  color: rgb(133, 30, 243);
-  background-color: white;
-  width: 100px;
-  text-align: center;
-  margin-top: 15px;
-  font-size: 18px;
-  text-decoration: none;
-  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  width: 80px;
+  border-radius: 5px;
 }
 .test {
   display: flex;
@@ -97,15 +85,15 @@
   margin: 0px;
 }
 @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    flex-flow: column-reverse;
-    height: 900px;
-  }
-  .container_right_side {
-    width: 80%;
+  .container{
     height: 600px;
   }
+  .container2 {
+    flex-direction: column-reverse;
+  }
+.label_container{
+  font-size: 12px;
+}
   .container_left_side {
     justify-content: unset;
   }
@@ -113,9 +101,9 @@
     width: 300px;
   }
   .img {
-    width: 95%;
-    height: 240px;
-    margin: 10px;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
   }
   .arrow_container {
     justify-content: space-between;
@@ -125,6 +113,9 @@
     font-size: 25px;
   }
 
+  .projects_label_container {
+    gap: 18px;
+  }
   .project_keys {
     display: flex;
     justify-content: space-between;
@@ -144,5 +135,8 @@
     margin-bottom: 15px;
     padding: 1px;
     height: 30px;
+  }
+  .test{
+    height: 0px;
   }
 }
